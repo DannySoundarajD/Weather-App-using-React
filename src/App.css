@@ -1,0 +1,214 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #2c3e50, #4ca1af); /* Gradient from dark blue to light teal */
+  color: #fff;
+  height: auto; /* Allow body height to be flexible */
+  min-height: 120vh; /* Ensures at least full viewport height */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center; /* Align to the top, you can change it if you want centered */
+  flex-direction: column; /* To stack the container and footer */
+  overflow-x: hidden; /* Avoid horizontal scroll */
+}
+
+.container {
+  max-width: 400px;
+  padding: 30px;
+  background-color: rgba(28, 28, 28, 0.9); /* Dark background with some transparency */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: 50px auto;
+  overflow-y: auto; /* Allows scrolling if content exceeds the height */
+  flex-grow: 1; /* Allow the container to grow and take available space */
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #444;
+  padding-bottom: 10px;
+}
+
+.city-name {
+  width: 85%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #333;
+  border: 1px solid #444;
+  border-radius: 4px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.city-name::placeholder {
+  color: #aaa;
+}
+
+.city-name:focus {
+  border-color: #00bcd4;
+  background-color: #444;
+}
+
+.search-icon {
+  cursor: pointer;
+  font-size: 24px;
+  position: relative;
+  left: -15px;
+  color: #00bcd4;
+  transition: color 0.3s ease;
+}
+
+.search-icon:hover {
+  color: #fff;
+}
+
+.weather-details {
+  margin-top: 20px;
+}
+
+.image img {
+  width: 80px;
+  height: 80px;
+}
+
+.temp {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #00bcd4; /* Accent color */
+}
+
+.location {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.country {
+  font-size: 18px;
+  font-weight: 300;
+  color: #aaa;
+}
+
+.cord {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 15px 0;
+  flex-wrap: wrap;
+}
+
+.cord div {
+  text-align: center;
+  width: 100%;
+}
+
+.lat, .log {
+  font-weight: bold;
+  color: #fff;
+}
+
+.data-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  gap: 20px;
+}
+
+.element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+}
+
+.icon, .icon1 {
+  width: 35px;
+  height: 35px;
+  margin-bottom: 8px;
+}
+
+.icon {
+  position: relative;
+  left: 15px;
+}
+
+.icon1 {
+  position: relative;
+  left: -25px;
+}
+
+.data-container .humidity-percent,
+.data-container .wind-percent {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.text {
+  font-size: 14px;
+  color: #aaa;
+  text-transform: uppercase;
+}
+
+.humidity-percent {
+  position: relative;
+  top: -25px;
+  left: 19px;
+}
+
+.text1 {
+  font-size: 14px;
+  color: #aaa;
+  text-transform: uppercase;
+  position: relative;
+  left: -55px;
+}
+
+/* New adjustments for positioning wind speed and humidity */
+.element.wind-speed {
+  align-items: flex-end;
+}
+
+.element:first-child {
+  align-items: flex-start;
+}
+
+.error {
+  color: #ff5252;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.Copyright{
+  text-align: center;
+  position: relative;
+  top: 10px;
+  font-size: 12px;
+  color: #888;
+}
+
+.Copyright span{
+  color: white;
+}
+
+.city-not-found,
+.loading-message,
+.error-message{
+  margin-top: 10px;
+  color: red;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+}

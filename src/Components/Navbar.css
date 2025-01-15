@@ -1,0 +1,81 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1f1f1f; /* Dark gray for navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: #e0e0e0; /* Light text for navbar links */
+    padding: 10px 20px;
+    margin: 0 15px;
+    font-size: 16px;
+    position: relative;
+    transition: color 0.3s, background-color 0.3s;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+    background-color: transparent;
+  }
+
+  .navbar a:hover {
+    color: #64ffda; /* Bright teal for hover effect */
+    background-color: rgba(255, 255, 255, 0.1); /* Slight hover background */
+  }
+
+  .navbar a.active {
+    font-weight: bold;
+    color: #64ffda; /* Bright teal for active tab */
+  }
+
+  .navbar a.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 8px;
+    background-color: #64ffda; /* Teal highlight */
+    border-radius: 0 0 10px 10px; /* Curved bottom for the highlight */
+  }
+
+  @media (max-width: 500px) {
+    .navbar {
+      display: none; 
+    }
+  
+    .mobile-navbar {
+      display: block;
+      background-color: #1f1f1f;
+    }
+  
+    
+    #navbarToggleExternalContent a {
+      color: #e0e0e0; 
+      text-decoration: none; 
+      padding: 10px 15px;
+      border-radius: 5px; 
+      display: block;
+      font-weight: bold;
+        color: #64ffda; 
+    }
+  
+  
+  }
+  
+  
+      @media (min-width: 501px) {
+        .mobile-navbar {
+          display: none; 
+        }
+      }
