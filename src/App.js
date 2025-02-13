@@ -143,9 +143,9 @@ function App() {
       />}
 
       
-      <p className="Copyright">
+      {/* <p className="Copyright">
         Designed By <span>Danny Soundaraj.D</span>
-      </p>
+      </p> */}
     </div>
   );
 }
