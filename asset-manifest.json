@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Weather-App-using-React/static/css/main.5fae94fd.css",
+    "main.js": "/Weather-App-using-React/static/js/main.44f07153.js",
+    "static/media/wind-icon.png": "/Weather-App-using-React/static/media/wind-icon.a282fe5c6da81b4c9710.png",
+    "index.html": "/Weather-App-using-React/index.html",
+    "main.5fae94fd.css.map": "/Weather-App-using-React/static/css/main.5fae94fd.css.map",
+    "main.44f07153.js.map": "/Weather-App-using-React/static/js/main.44f07153.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5fae94fd.css",
+    "static/js/main.44f07153.js"
+  ]
+}
